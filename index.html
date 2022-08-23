@@ -1,167 +1,141 @@
- <!DOCTYPE html>
- <html lang="en">
- <head>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Football</title>
-<link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
+    <title>Do Shopping with JS</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
 
- </head>
- <body>
-    
-    <section class="players mt-5">
-
-        <div class="grid grid-cols-2 gap-4">
-
-            <!-- product cart -->
-
-        <!-- 1st 3card start -->
-
-            <div> 
-                
-                <div class="grid grid-cols-3 gap-4">
-<!-- player1 start -->
-             <div><div class="card card-compact w-full h-80 bg-base-100 shadow-xl ">
-                <figure><img src="images/messi.jpg" alt="Shoes" /></figure>
-                <div class="card-body">
-                  <h2 class="card-title">Lioni Messi</h2>
-                  <p>100 Gols - 200 Ast</p>
-                  <div class="card-actions justify-end">
-                    <button class="btn btn-primary"onclick="addToCart(this)">Select</button>
-                  </div>
-                </div>
-              </div></div>
-
-                <!-- player1 end -->
-
-                <!-- player2 start -->
-                <div class=""><div class="card card-compact w-full h-80 bg-base-100 shadow-xl ">
-                    <figure><img src="images/ambape.jpg" alt="Shoes" /></figure>
-                    <div class="card-body">
-                      <h2 class="card-title">Ambape</h2>
-                      <p>20 Gols - 20 Ast</p>
-                      <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Select</button>
-                      </div>
-                    </div>
-                  </div></div>
-                 <!-- player2 end -->
-
-                <!-- player3 start -->
-                <div><div class="card card-compact w-full h-80 mx-auto bg-base-100 shadow-xl">
-                    <figure><img src="images/dimaria.jpg" alt="Shoes" /></figure>
-                    <div class="card-body">
-                      <h2 class="card-title">Demaria</h2>
-                      <p>25 Gols - 30 Ast</p>
-                      <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Select</button>
-                      </div>
-                    </div>
-                  </div></div>
-                 <!-- player3 end -->
-                 
-                
-              </div>
-            </div>
-             
-            <div>Product total</div>
-
-          </div>
-
-          <!-- 1st 3card end -->
-
-           <!-- 2nd 3card start -->
-
-          <div class="grid grid-cols-2 gap-4">
-            <div><div class="grid grid-cols-3 gap-4">
-                <!-- player4 start -->
-                <div><div class="card card-compact w-full h-80 mx-auto bg-base-100 shadow-xl">
-                    <figure><img src="images/jamal.jpg" alt="Shoes" /></figure>
-                    <div class="card-body">
-                      <h2 class="card-title">Jamal</h2>
-                      <p>21 Gols - 25 Ast</p>
-                      <div class="card-actions justify-end">
-                        <button class ="btn btn-primary" onclick="addToCart(this)"> Select </button>
-                      </div>
-                    </div>
-                  </div></div>
-                 <!-- player4 end -->
-                <!-- player5 start -->
-                <div><div class="card card-compact w-full h-80 bg-base-100 shadow-xl mx-auto">
-                    <figure><img src="images/martines.jpg" alt="Shoes" /></figure>
-                    <div class="card-body">
-                      <h2 class="card-title">Martines</h2>
-                      <p> save - 100Gols </p>
-                      <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Select</button>
-                      </div>
-                    </div>
-                  </div></div>
-                 <!-- player5 end -->
-                <!-- player6 start -->
-                <div><div class="card card-compact w-full h-80 bg-base-100 shadow-xl mx-auto">
-                    <figure><img src="images/naymar.jpg" alt="Shoes" /></figure>
-                    <div class="card-body">
-                      <h2 class="card-title">JR Nemar</h2>
-                      <p>50 Gols - 50 Ast</p>
-                      <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Select</button>
-                      </div>
-                    </div>
-                  </div></div>
-                 <!-- player6 end -->
-                <!-- player7 start -->
-                <div>07</div>
-                 <!-- player7 end -->
-                
-              </div></div>
-            <!-- ... -->
-            <div>02</div>
-           
-          </div>
-
-
-           <!-- 2nd 3card end -->
-
-
-
-
-
-
-
-
-
-
-
-
-    </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<body>
+      
         
-  
+    <main class="w-9/12 mx-auto mt-5 pb-20">
+        <div class="grid grid-cols-2 gap-4 divide-x">
+            <div class="grid grid-cols-3 gap-2">
+                <!-- product 1 -->
+                <div>
+                    <div class="card card-compact w-full bg-base-100 shadow-xl">
+                        <figure><img src="images/suyarej.jpg" alt="Shoes" class="w-full h-40"/></figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Suyares</h2>
+                            <!-- <p>
+                                Price: $ <span>108</span>
+                            </p> -->
+                            <div class="card-actions justify-end">
+                                <button class="btn btn-primary"onclick="addToCart(this)">Select</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- product 2 -->
+                <div>
+                    <div class="card card-compact w-full bg-base-100 shadow-xl">
+                        <figure><img src="images/messi.jpg" alt="Shoes" class="w-full h-40"/></figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Messi</h2>
+                            <!-- <p>
+                                Price: $ <span>113</span>
+                            </p> -->
+                            <div class="card-actions justify-end">
+                                <button class="btn btn-primary" onclick="addToCart(this)">Select</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card card-compact w-full bg-base-100 shadow-xl">
+                        <figure><img src="images/dimaria.jpg" alt="Shoes" class="w-full h-40"/></figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Demaria</h2>
+                            <!-- <p>
+                                Price: $ <span>113</span>
+                            </p> -->
+                            <div class="card-actions justify-end">
+                                <button class="btn btn-primary" onclick="addToCart(this)">Select</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- product 3 -->
+                <div>
+                    <div class="card card-compact w-full bg-base-100 shadow-xl">
+                        <figure><img src="images/martines.jpg" alt="Shoes" class="w-full h-40"/></figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Martines</h2>
+                            <!-- <p>
+                                Price: $ <span>112</span>
+                            </p> -->
+                            <div class="card-actions justify-end">
+                                <button class="btn btn-primary" onclick="addToCart(this)">Select</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- product 4 -->
+                <div>
+                    <div class="card card-compact w-full bg-base-100 shadow-xl">
+                        <figure><img src="images/naymar.jpg" alt="" class="w-full h-40"/></figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Naymar</h2>
+                            <!-- <p>
+                                Price: $ <span>105</span>
+                            </p> -->
+                            <div class="card-actions justify-end">
+                                <button class="btn btn-primary" onclick="addToCart(this)">Select</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- product 5 -->
+                <div>
+                    <div class="card card-compact w-full bg-base-100 shadow-xl">
+                        <figure><img src="images/sala.jpg" alt=" " class="w-full h-40"/></figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Sala</h2>
+                            <p>
+                                Price: $ <span>125</span>
+                            </p>
+                            <div class="card-actions justify-end">
+                                <button class="btn btn-primary" onclick="addToCart(this)">select</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- product CART -->
+            <div>
+<p class="text-4xl text-center">Total added Products <span id="total-added-product" class="text-blue-500">0</span>
+                </p>
+                <div class="overflow-x-auto">
+                    <table class="table table-zebra w-full">
+                      <!-- head -->
+                      <thead>
+                        <tr>
+                          <th></th>
+                          <!-- <th>Select your best</th>
+                          <th>Price</th> -->
+                        </tr>
+                      </thead>
+                      <tbody id="cart-products">
+                        <!-- <tr>
+                            <th>1</th>
+                            <td>Cy Ganderton</td>
+                            <td>Quality Control Specialist</td>
+                          </tr> -->
+                      </tbody>
+                    </table>
+                  </div>
+            </div>
+        </div>
+    </main>
+    <script src="football.js"></script>
+     
 
+    
+</body>
 
-
-
-
-
-
-<script src="football.js">
-
- </body>
- </html>
+</html>
