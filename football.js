@@ -25,6 +25,9 @@ tr.innerHTML = `
 }
 
 
+
+
+
  function addToCart(element){
 const productName=element.parentNode.parentNode.children[0].innerText;
 // console.log(productName);
@@ -34,9 +37,77 @@ const productobj={
 // console.log(productobj);
 cartArray.push(productobj);
 // console.log(cartArray);
-document.getElementById("total-added-product").innerText=cartArray.length;
+const previous = document.getElementById("total-added-product").innerText=cartArray.length;
+ 
+  display(cartArray);
 
-document.getElementById("total-added-product").innerText = cartArray.length;
-display(cartArray);
+
+//PlayerAmount start
+
+document.getElementById('calculate-btn').addEventListener('click',function(){
+
+    const inputAmountString = document.getElementById('input-field').value;
+ ;
+
+const playerAmount =inputAmountString*previous ;
+console.log(playerAmount);
+
+ 
+
+const previousPlayerAmount = document.getElementById('total-amount').innerText = playerAmount;
+})
+
+document.getElementById('team-total-btn').addEventListener('click',function(){
+
+    const chochAmount = parseFloat(document.getElementById('choch-fee').value);
+   
+
+    const menejarAmount = parseFloat(document.getElementById('menejar-fee').value);
+
+     
+
+const teamMenesAmount = chochAmount+menejarAmount+previous;
+    console.log(teamMenesAmount);
+
+ 
+
+
+
+
+
+
+
+
+})
+
+
+
+
+
+//playerAmount end
+
+// document.getElementById('team-total').addEventListener('click',function(){
+
+//     const chochAmount = parseFloat(document.getElementById('choch-fee').value);
+   
+
+//     const menejarAmount = parseFloat(document.getElementById('menejar-fee').value);
+
+     
+
+// const teamMenesAmount = chochAmount+menejarAmount+ previous;    
+//     console.log(teamMenesAmount);
+//     const previousPlayerAmount = document.getElementById('total-amount').innerText = teamMenesAmount;
+
+
+//  })
+
+ 
+  
 
  }
+
+
+
+
+ 

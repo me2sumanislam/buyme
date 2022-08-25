@@ -1,47 +1,81 @@
-const cart = [];
-// products-cart
 
-function displayProduct()
-{
-    let totalPrice = 0;
-    const totalProducts = document.getElementById("total-products");
-    totalProducts.innerText = cart.length;
 
-    const cartContainer = document.getElementById("products-cart");
-    cartContainer.textContent = '';
+document.getElementById('calculate-btn').addEventListener('click',function(){
 
-    for(let i = 0; i < cart.length; i++)
-    {
-        totalPrice += cart[i].pdPrice;
+    const inputAmountString = document.getElementById('input-field').value;
 
-        const tr = document.createElement("tr");
-        tr.innerHTML = `
-        <th>${i+1}</th>
-        <td>${cart[i].pdName}</td>
-        <td>${cart[i].pdPrice}</td>
-        `;
-        cartContainer.appendChild(tr);
-    }
-    const tr = document.createElement('tr');
-    tr.innerHTML = `
-    <th></th>
-    <td>Total Price</td>
-    <td>${totalPrice}</td>
-    `;
+// console.log(inputAmountString);
+     const totalPlayer =5;
 
-    cartContainer.appendChild(tr);
-}
+const playerAmount =inputAmountString*totalPlayer ;
 
-function addToCart(element) {
-    const pdName = element.parentNode.parentNode.children[0].innerText;
-    const pdPrice = element.parentNode.parentNode.children[1].children[0].innerText;
+// console.log(multipy);
 
-    const pd = {
-        pdName: pdName,
-        pdPrice: parseInt(pdPrice)
-    }
+const previousPlayerAmount = document.getElementById('total-amount').innerText = playerAmount;
 
-    cart.push(pd);
+
+document.getElementById('team-total').addEventListener('click',function(){
+
+    const chochAmount = parseFloat(document.getElementById('choch-fee').value);
+   
+
+    const menejarAmount = parseFloat(document.getElementById('menejar-fee').value);
+
+     
+
+const teamMenesAmount = chochAmount+menejarAmount+previousPlayerAmount;
+    console.log(teamMenesAmount);
+
+
+ })
+
     
-    displayProduct();
-}
+     });
+
+//      document.getElementById('team-total').addEventListener('click',function(){
+
+//         const chochAmount = parseFloat(document.getElementById('choch-fee').value);
+       
+
+//         const menejarAmount = parseFloat(document.getElementById('menejar-fee').value);
+
+         
+
+//  const teamMenesAmount = chochAmount+menejarAmount+previousPlayerAmount;
+//         console.log(teamMenesAmount);
+ 
+
+//      })
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//      function multiplyBy()
+// {
+//         num1 = document.getElementById("firstNumber").value;
+//         num2 = document.getElementById("secondNumber").value;
+//         document.getElementById("result").innerHTML = num1 * num2;
+// }

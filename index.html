@@ -108,8 +108,9 @@
             </div>
             <!-- product CART -->
             <div>
-<p class="text-4xl text-center">Total added Products <span id="total-added-product" class="text-blue-500">0</span>
+<p class="text-4xl text-center">Your Best Five :- <span id="total-added-product" class="text-blue-500">0</span>
                 </p>
+                
                 <div class="overflow-x-auto">
                     <table class="table table-zebra w-full">
                       <!-- head -->
@@ -128,6 +129,46 @@
                           </tr> -->
                       </tbody>
                     </table>
+                    <section class="calculation-div">
+
+
+                        <div class="calculate ml-10 bg-secondary w-64 mt-10  "> 
+                            <input id="input-field" class = "input-field  mt-10 pl-5  ml-4" type="text" placeholder="enter your price"><br>
+                            <button  id="calculate-btn"class="btn mt-10  pl-5 ml-4">Calculate Price</button>
+                            
+                            <h2 class="ml-4">PlayerCost $<span id="total-amount">0</span></h2>
+                            
+                            </div>
+
+                            
+<div class="total-team-fee mt-10 bg-orange-500 w-64 mt-10  ml-10 	">
+
+    Choch: <input id="choch-fee"  class = "input-field  pl-5  ml-4" type ="text" placeholder="enter Amout">
+    Menejar: <input id="menejar-fee"  class = "input-field   pl-5  ml-4" type ="text" placeholder="enter Amout">
+
+    <button id="team-total-btn" class="btn  bg-zinc-900  ml-10 mb-10 mt-5">calculate</button>
+
+    <h2 class="ml-4">Total Team Cost$<span id="team-cost">0</span></h2>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </section>
                   </div>
             </div>
         </div>
