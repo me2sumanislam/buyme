@@ -55,7 +55,7 @@ console.log(playerAmount);
  
 
 const previousPlayerAmount = document.getElementById('total-amount').innerText = playerAmount;
-})
+
 
 document.getElementById('team-total-btn').addEventListener('click',function(){
 
@@ -66,19 +66,20 @@ document.getElementById('team-total-btn').addEventListener('click',function(){
 
      
 
-const teamMenesAmount = chochAmount+menejarAmount+previous;
+const teamMenesAmount = chochAmount+menejarAmount+previousPlayerAmount;
     console.log(teamMenesAmount);
 
  
 
-
-
-
+    const  teamMenesmentAmount = document.getElementById('team-cost').innerText = teamMenesAmount;
 
 
 
 
 })
+
+
+});
 
 
 

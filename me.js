@@ -1,56 +1,50 @@
 
 
-document.getElementById('calculate-btn').addEventListener('click',function(){
+// document.getElementById('calculate-btn').addEventListener('click',function(){
 
-    const inputAmountString = document.getElementById('input-field').value;
+//     const inputAmountString = document.getElementById('input-field').value;
 
-// console.log(inputAmountString);
-     const totalPlayer =5;
+// // console.log(inputAmountString);
+//      const totalPlayer =5;
 
-const playerAmount =inputAmountString*totalPlayer ;
+// const playerAmount =inputAmountString*totalPlayer ;
 
-// console.log(multipy);
+// // console.log(multipy);
 
-const previousPlayerAmount = document.getElementById('total-amount').innerText = playerAmount;
+// const previousPlayerAmount = document.getElementById('total-amount').innerText = playerAmount;
 
 
-document.getElementById('team-total').addEventListener('click',function(){
+// document.getElementById('team-total').addEventListener('click',function(){
 
-    const chochAmount = parseFloat(document.getElementById('choch-fee').value);
+//     const chochAmount = parseFloat(document.getElementById('choch-fee').value);
    
 
-    const menejarAmount = parseFloat(document.getElementById('menejar-fee').value);
+//     const menejarAmount = parseFloat(document.getElementById('menejar-fee').value);
 
      
 
-const teamMenesAmount = chochAmount+menejarAmount+previousPlayerAmount;
-    console.log(teamMenesAmount);
+// const teamMenesAmount = chochAmount+menejarAmount+previousPlayerAmount;
+//     console.log(teamMenesAmount);
 
 
- })
+//  })
 
     
-     });
-
-//      document.getElementById('team-total').addEventListener('click',function(){
-
-//         const chochAmount = parseFloat(document.getElementById('choch-fee').value);
-       
-
-//         const menejarAmount = parseFloat(document.getElementById('menejar-fee').value);
-
-         
-
-//  const teamMenesAmount = chochAmount+menejarAmount+previousPlayerAmount;
-//         console.log(teamMenesAmount);
+//      });
  
-
-//      })
-
 
  
 
 
+Copy Code
+function clicked(buttonID)
+{
+    foreach button in list_of_buttons
+    if (button.id == buttonID
+        disable it
+    else
+        enable it
+}
 
 
 
@@ -72,10 +66,4 @@ const teamMenesAmount = chochAmount+menejarAmount+previousPlayerAmount;
 
 
 
-
-//      function multiplyBy()
-// {
-//         num1 = document.getElementById("firstNumber").value;
-//         num2 = document.getElementById("secondNumber").value;
-//         document.getElementById("result").innerHTML = num1 * num2;
-// }
+ 
