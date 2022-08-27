@@ -1,37 +1,167 @@
+ 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculate price</title>
-    
-<link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
-
+    <title>  with JS</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<div class="calculate ml-10 bg-secondary w-64 mt-10  "> 
-<input id="input-field" class = "input-field  mt-10 pl-5  ml-4" type="text" placeholder="enter your price"><br>
-<button  id="calculate-btn"class="btn mt-10  pl-5 ml-4">Calculate Price</button>
+<body>
+      
+        
+    <main class="w-9/12 mx-auto mt-5 pb-20">
+        <div class="grid grid-cols-2 gap-4 divide-x">
+            <div class="grid grid-cols-3 gap-2">
+                <!-- product 1 -->
+                <div>
+                    <div class="card card-compact w-full bg-base-100 shadow-xl">
+                        <figure><img src="images/suyarej.jpg" alt="Shoes" class="w-full h-40"/></figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Suyares</h2>
+                            <!-- <p>
+                                Price: $ <span>108</span>
+                            </p> -->
+                            <div class="card-actions justify-end">
+                                <button class="btn btn-primary"onclick="addToCart(this)" id="btn">Select</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- product 2 -->
+                <div>
+                    <div class="card card-compact w-full bg-base-100 shadow-xl">
+                        <figure><img src="images/messi.jpg" alt="Shoes" class="w-full h-40"/></figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Messi</h2>
+                            <!-- <p>
+                                Price: $ <span>113</span>
+                            </p> -->
+                            <div class="card-actions justify-end">
+                                <button class="btn btn-primary" onclick="addToCart(this)"id="btn">Select</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card card-compact w-full bg-base-100 shadow-xl">
+                        <figure><img src="images/dimaria.jpg" alt="Shoes" class="w-full h-40"/></figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Demaria</h2>
+                            <!-- <p>
+                                Price: $ <span>113</span>
+                            </p> -->
+                            <div class="card-actions justify-end">
+                                <button class="btn btn-primary" onclick="addToCart(this)"id="btn">Select</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- product 3 -->
+                <div>
+                    <div class="card card-compact w-full bg-base-100 shadow-xl">
+                        <figure><img src="images/martines.jpg" alt="" class="w-full h-40"/></figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Martines</h2>
+                            <!-- <p>
+                                Price: $ <span>112</span>
+                            </p> -->
+                            <div class="card-actions justify-end">
+                                <button class="btn btn-primary" onclick="addToCart(this)">Select</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- product 4 -->
+                <div>
+                    <div class="card card-compact w-full bg-base-100 shadow-xl">
+                        <figure><img src="images/naymar.jpg" alt="" class="w-full h-40"/></figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Naymar</h2>
+                            <!-- <p>
+                                Price: $ <span>105</span>
+                            </p> -->
+                            <div class="card-actions justify-end">
+                                <button class="btn btn-primary" onclick="addToCart(this)" id="btn">Select</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- product 5 -->
+                <div>
+                    <div class="card card-compact w-full bg-base-100 shadow-xl">
+                        <figure><img src="images/sala.jpg" alt=" " class="w-full h-40"/></figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Sala</h2>
+                             
+                            <div class="card-actions justify-end">
+                                <button class="btn btn-primary" onclick="addToCart(this)" id="btn">select</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- product CART -->
+            <div>
+<p class="text-4xl text-center">Your Best Five :- <span id="total-added-product" class="text-blue-500">0</span>
+                </p>
+                
+                <div class="overflow-x-auto">
+                    <table class="table table-zebra w-full">
+                      <!-- head -->
+                      <thead>
+                        <tr>
+                          <th></th>
+                          <!-- <th>Select your best</th>
+                          <th>Price</th> -->
+                        </tr>
+                      </thead>
+                      <tbody id="cart-products">
+                        <!-- <tr>
+                            <th>1</th>
+                            <td>Cy Ganderton</td>
+                            <td>Quality Control Specialist</td>
+                          </tr> -->
+                      </tbody>
+                    </table>
+                    <section class="calculation-div">
 
-<h2 class="ml-4">PlayerCost $<span id="total-amount">0</span></h2>
 
-</div>
+                        <div class="calculate ml-10 bg-secondary w-64 mt-10  "> 
+                            <input id="input-field" class = "input-field  mt-10 pl-5  ml-4" type="text" placeholder="enter your price"><br>
+                            <button  id="calculate-btn"class="btn mt-10  pl-5 ml-4">Calculate Price</button>
+                            
+                            <h2 class="ml-4">PlayerCost $<span id="total-amount">0</span></h2>
+                            
+                            </div>
 
+                            
 <div class="total-team-fee mt-10 bg-orange-500 w-64 mt-10  ml-10 	">
 
     Choch: <input id="choch-fee"  class = "input-field  pl-5  ml-4" type ="text" placeholder="enter Amout">
     Menejar: <input id="menejar-fee"  class = "input-field   pl-5  ml-4" type ="text" placeholder="enter Amout">
 
-    <button id="team-total" class="btn  bg-zinc-900  ml-10 mb-10 mt-5">calculate</button>
+    <button id="team-total-btn" class="btn  bg-zinc-900  ml-10 mb-10 mt-5">calculate</button>
+
+    <h2 class="ml-4">Total Team Cost$<span id="team-cost">0</span></h2>
 
 
 </div>
+                    </section>
+                  </div>
+            </div>
+        </div>
+    </main>
+    <script src="me.js"></script>
+     
 
-
-
-
-<script src="me.js"></script>
+    
 </body>
+
 </html>
+
+ 

@@ -82,7 +82,7 @@ const teamMenesAmount = chochAmount+menejarAmount+previousPlayerAmount;
 });
 
 
-
+}
 
 
 //playerAmount end
@@ -106,7 +106,7 @@ const teamMenesAmount = chochAmount+menejarAmount+previousPlayerAmount;
  
   
 
- }
+
 
 
 
