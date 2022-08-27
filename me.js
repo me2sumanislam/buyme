@@ -75,8 +75,8 @@ document.getElementById('team-total-btn').addEventListener('click',function(){
 
     
 
-const teamMenesAmount = chochAmount+menejarAmount+previousPlayerAmount;
-   console.log(teamMenesAmount);
+const teamMenesAmount = coachAmount+managerAmount+previousPlayerAmount;
+   // console.log(teamMenesAmount);
 
 
 

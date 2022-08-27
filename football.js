@@ -59,14 +59,14 @@ const previousPlayerAmount = document.getElementById('total-amount').innerText =
 
 document.getElementById('team-total-btn').addEventListener('click',function(){
 
-    const chochAmount = parseFloat(document.getElementById('choch-fee').value);
+    const coachAmount = parseFloat(document.getElementById('coach-fee').value);
    
 
-    const menejarAmount = parseFloat(document.getElementById('menejar-fee').value);
+    const managerAmount = parseFloat(document.getElementById('manager-fee').value);
 
      
 
-const teamMenesAmount = chochAmount+menejarAmount+previousPlayerAmount;
+const teamMenesAmount = coachAmount+managerAmount+previousPlayerAmount;
     console.log(teamMenesAmount);
 
  
