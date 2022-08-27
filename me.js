@@ -1,14 +1,3 @@
-//  const button = document.querySelectorAll('.btn').disabled = true;
-//  console.log(button);
-
-
-
-
-
-
-
-
-
 const cartArray =[];
 
 function display(cartProduct){
@@ -36,6 +25,8 @@ tr.innerHTML = `
 }
 
 
+
+
 function addToCart(element){
 const productName=element.parentNode.parentNode.children[0].innerText;
 // console.log(productName);
@@ -43,24 +34,23 @@ const productobj={
    productName:productName,
 }
 // console.log(productobj);
-cartArray.push(productobj); 
+cartArray.push(productobj);
 // console.log(cartArray);
 const previous = document.getElementById("total-added-product").innerText=cartArray.length;
 
  display(cartArray);
 
-}
- 
+
 //PlayerAmount start
 
 document.getElementById('calculate-btn').addEventListener('click',function(){
 
    const inputAmountString = document.getElementById('input-field').value;
+//  ;
 
-
-const playerAmount =inputAmountString*previous;
+const playerAmount =inputAmountString*previous ;
 console.log(playerAmount);
- 
+
 
 
 const previousPlayerAmount = document.getElementById('total-amount').innerText = playerAmount;
@@ -76,25 +66,41 @@ document.getElementById('team-total-btn').addEventListener('click',function(){
     
 
 const teamMenesAmount = coachAmount+managerAmount+previousPlayerAmount;
-   // console.log(teamMenesAmount);
+   console.log(teamMenesAmount);
 
 
 
    const  teamMenesmentAmount = document.getElementById('team-cost').innerText = teamMenesAmount;
+
+
+
+
+})
+
+
+});
+
+
+}
+
+
+//playerAmount end
+
+// document.getElementById('team-total').addEventListener('click',function(){
+
+//     const chochAmount = parseFloat(document.getElementById('choch-fee').value);
   
-})
 
+//     const menejarAmount = parseFloat(document.getElementById('menejar-fee').value);
 
-})
+    
 
  
 
-// function addToCard(element){
-//    if(cartProduct.length<5){
-//       element.disabled =true;
-//    }
-//    else{
-//       element.disabled =false;
-//    }
-// }
  
+
+
+
+
+
+

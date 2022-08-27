@@ -47,7 +47,7 @@ const previous = document.getElementById("total-added-product").innerText=cartAr
 document.getElementById('calculate-btn').addEventListener('click',function(){
 
     const inputAmountString = document.getElementById('input-field').value;
- ;
+//  ;
 
 const playerAmount =inputAmountString*previous ;
 console.log(playerAmount);

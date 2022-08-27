@@ -1,4 +1,3 @@
- 
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>  with JS</title>
+    <title>BuyFootbaler</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -27,7 +26,7 @@
                                 Price: $ <span>108</span>
                             </p> -->
                             <div class="card-actions justify-end">
-                                <button class="btn btn-primary"onclick="addToCart(this)" id="btn">Select</button>
+                                <button class="btn btn-primary"onclick="addToCart(this)">Select</button>
                             </div>
                         </div>
                     </div>
@@ -42,7 +41,7 @@
                                 Price: $ <span>113</span>
                             </p> -->
                             <div class="card-actions justify-end">
-                                <button class="btn btn-primary" onclick="addToCart(this)"id="btn">Select</button>
+                                <button class="btn btn-primary" onclick="addToCart(this)">Select</button>
                             </div>
                         </div>
                     </div>
@@ -56,7 +55,7 @@
                                 Price: $ <span>113</span>
                             </p> -->
                             <div class="card-actions justify-end">
-                                <button class="btn btn-primary" onclick="addToCart(this)"id="btn">Select</button>
+                                <button class="btn btn-primary" onclick="addToCart(this)">Select</button>
                             </div>
                         </div>
                     </div>
@@ -64,7 +63,7 @@
                 <!-- product 3 -->
                 <div>
                     <div class="card card-compact w-full bg-base-100 shadow-xl">
-                        <figure><img src="images/martines.jpg" alt="" class="w-full h-40"/></figure>
+                        <figure><img src="images/martines.jpg" alt="Shoes" class="w-full h-40"/></figure>
                         <div class="card-body">
                             <h2 class="card-title">Martines</h2>
                             <!-- <p>
@@ -86,7 +85,7 @@
                                 Price: $ <span>105</span>
                             </p> -->
                             <div class="card-actions justify-end">
-                                <button class="btn btn-primary" onclick="addToCart(this)" id="btn">Select</button>
+                                <button class="btn btn-primary" onclick="addToCart(this)">Select</button>
                             </div>
                         </div>
                     </div>
@@ -97,9 +96,11 @@
                         <figure><img src="images/sala.jpg" alt=" " class="w-full h-40"/></figure>
                         <div class="card-body">
                             <h2 class="card-title">Sala</h2>
-                             
+                            <p>
+                                Price: $ <span>125</span>
+                            </p>
                             <div class="card-actions justify-end">
-                                <button class="btn btn-primary" onclick="addToCart(this)" id="btn">select</button>
+                                <button class="btn btn-primary" onclick="addToCart(this)">select</button>
                             </div>
                         </div>
                     </div>
@@ -142,8 +143,8 @@
                             
 <div class="total-team-fee mt-10 bg-orange-500 w-64 mt-10  ml-10 	">
 
-    Coach: <input id="coach-fee"  class = "input-field  pl-5  ml-4" type ="text" placeholder="enter Amout">
-    Manager: <input id="manager-fee"  class = "input-field   pl-5  ml-4" type ="text" placeholder="enter Amout">
+    Coach: <input id="coach-fee"  class = "input-field  pl-5  ml-4" type ="text" placeholder="enter Amount">
+    Manager: <input id="manager-fee"  class = "input-field   pl-5  ml-4" type ="text" placeholder="enter Amount">
 
     <button id="team-total-btn" class="btn  bg-zinc-900  ml-10 mb-10 mt-5">calculate</button>
 
@@ -151,17 +152,16 @@
 
 
 </div>
+
                     </section>
                   </div>
             </div>
         </div>
     </main>
-    <script src="me.js"></script>
+    <script src="football.js"></script>
      
 
     
 </body>
 
 </html>
-
- 
