@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>World's Best Top Players</title>
+    <link rel="shortcut icon" href="images/circket.jpg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+
+<body class=" m-5 bg-dark">
+    <header class="d-flex align-items-center  border border-danger">
+        <img src="images/Mitchell-Starc-removebg-preview (1).png" alt="">
+        <div class="text-center ">
+            <h1 class=" fw-bolder fst-italic  text-danger">World's Best Cricket Players
+
+            </h1>
+            <p class="fw-bold text-white">England’s national summer sport is Cricket.Which is now played throughout the
+                world.Particularly in
+                Australia, India, Pakistan, the West Indies and the British Isles.Cricket is played with a bat and ball
+                and involves two competing sides teams of 11 players. The field is oval with a rectangular area in the
+                middle, known as the pitch, that is 22 yards by 10 feet wide. Two sets of three sticks, called wickets,
+                are set in the ground at each end of the pitch. Across the top of each wicket lie horizontal pieces
+                called bails.</p>
+        </div>
+        <img class="w-25 " style="height:350px ;" src="images/ICC-Cricket-World-Cup-removebg-preview.png" alt="">
+    </header>
+    <!-- header section end// -->
+
+    <main class="m-5 ">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-3 p-3 text-center text-white fw-bold ">
+                <div class="card  bg-dark shadow-lg" style="width: 18rem;">
+                    <div class="card-body  ">
+                        <img class="img-fluid pb-3" style="height:250px ;" src="images/download.jpg" alt="">
+                        <h5 class="card-title">Shakib Al Hasan</h5>
+                        <p class="card-text">Captain in Test and T20I cricket and all-rounder. </p>
+                        <button onclick="addPlayers(this);this.disabled = true;"
+                            class="btn btn-primary w-100">Select</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-3 p-3 text-center fw-bold">
+                <div class="card bg-dark shadow-lg" style="width: 18rem;">
+                    <div class="card-body  text-white">
+                        <img class="img-fluid pb-3" style="height:250px ;" src="images/Chris-Gayle-1.jpg" alt="">
+                        <h5 class="card-title">Chris Gayle</h5>
+                        <p class="card-text">Gayle is widely regarded as one of the greatest batsmen.</p>
+                        <button onclick="addPlayers(this);this.disabled = true;"
+                            class="btn btn-primary w-100">Select</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-3 p-3 text-center fw-bold">
+                <div class="card bg-dark  shadow-lg" style="width: 18rem;">
+                    <div class="card-body  text-white">
+                        <img class="img-fluid pb-3 " style="height:250px ;" src="images/Shahid-Afridi.jpeg" alt="">
+                        <h5 class="card-title">Shahid Afridi</h5>
+                        <p class="card-text">Captain of the Pakistan national cricket team.</p>
+                        <button onclick="addPlayers(this);this.disabled = true;"
+                            class="btn btn-primary w-100">Select</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 p-3  ">
+                <div class="card bg-dark shadow-lg">
+                    <div class="card-body  text-white">
+                        <h1 class="text-danger ">Players Name</h1>
+                        <div id="top-players">
+
+                        </div>
+                        <!-- <table class="table" style="height:330px ;">
+
+                            <thead>
+                                <tr>
+                                    <th> </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row"></th>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 p-3 text-center fw-bold">
+                <div class="card  bg-dark shadow-lg" style="width: 18rem;">
+                    <div class="card-body  text-white">
+                        <img class="img-fluid pb-3" style="height:250px ;" src="images/Hashim-amla.jpg" alt="">
+                        <h5 class="card-title">Hashim Amla</h5>
+                        <p class="card-text">Fastest cricketer to reach 10 ODI centuries.</p>
+                        <button onclick="addPlayers(this);this.disabled = true;"
+                            class="btn btn-primary w-100">Select</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 p-3 text-center fw-bold">
+                <div class="card bg-dark  shadow-lg" style="width: 18rem;">
+                    <div class="card-body  text-white">
+                        <img class="img-fluid pb-3" style="height:250px ;"
+                            src="images/e5924554bea9502ac5113e907ecebf45.jpg" alt="">
+                        <h5 class="card-title">Ricky Ponting</h5>
+                        <p class="card-text">Ponting was captain of the Australian national team.</p>
+                        <button onclick="addPlayers(this);this.disabled = true;"
+                            class="btn btn-primary w-100">Select</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 p-3 text-center fw-bold">
+                <div class="card bg-dark  shadow-lg" style="width: 18rem;">
+                    <div class="card-body  text-white">
+                        <img class="img-fluid pb-3" style="height:250px ;" src="images/shanewatson.jpg" alt="">
+                        <h5 class="card-title">Shane Watson</h5>
+                        <p class="card-text"> He is a right-handed batsman and fast-medium swing bowler.</p>
+                        <button onclick="addPlayers(this);this.disabled = true;"
+                            class="btn btn-primary w-100">Select</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 p-3  ">
+                <div class="card bg-dark  shadow-lg" style="height:415px ;">
+                    <div class="card-body text-white ">
+                        <h4 class="text-center pb-3">Budget</h4>
+                        <p class="d-flex pe-1">Per Player: <input type="text" name="" id="per-player"></p>
+                        <button class="btn btn-primary w-100" id="calculate"> Calculate</button>
+                        <h4 class="mt-3"> Player Expenses $<span id="expenses"></span></h4>
+                        <p class="d-flex pe-1">Manager: <input type="text" name="" id="manager"></p>
+                        <p class="d-flex pe-1">Coach: <input type="text" name="" id="coach"></p>
+                        <button class="btn btn-primary w-100" id="c-total"> Calculate Total</button>
+                        <h5 class="mt-3">Total = $<span id="total"></span> </h5>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        </div>
+    </main>
+
+    <footer>
+        <hr class="text-white">
+
+        <p class=" text-center mt-5 fw-bold text-white">Copyright @ 2022 All Rights Reserved.
+        </p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script src="players.js"></script>
+    <script src="calculation.js"></script>
+</body>
+
+</html>
